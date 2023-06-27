@@ -1,0 +1,13 @@
+Sehr geehrte Damen und Herren,
+
+Regeln:
+Schere schneidet Papier, Stein schleift Schere und Papier umwickelt den Stein.
+
+den Code der Python Datei bitte bei "https://www.online-python.com/" direkt öffnen oder kopieren und einfügen.
+
+Freundliche Grüße
+
+
+
+Sofie Preißinger
+
