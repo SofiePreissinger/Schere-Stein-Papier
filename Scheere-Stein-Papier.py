@@ -29,13 +29,13 @@ while True :
     print ('%s gewonnen, %s verloren, %s unentschieden' % (gewonnen, verloren, unentschieden))
 
     while True :
-        print ('Bitte Option wählen: Schere(1) Stein(2) Papier(3) oder (A)ufhören')
+        print ('Bitte Option wählen: Schere(1) Stein(2) Papier(3) oder (b)beenden')
         playerMove = input()
-        if playerMove == 'A':
+        if playerMove == 'b':
                 sys.exit()
         if playerMove == '1' or playerMove == '2' or playerMove == '3':
                 break
-        print ('Bitte 1,2,3 oder A eingeben')
+        print ('Bitte 1,2,3 oder b eingeben')
 
 
 
