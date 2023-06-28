@@ -1,6 +1,25 @@
 import random, sys
 
-print ('Schere-Stein-Papier')
+
+def willkommen():
+    print('''
+Willkommen! Viel Spaß mit Schere-Stein-Papier
+Regeln:
+Schere schlägt Papier
+Papier schlägt Stein
+Stein schlägt Schere
+-Sofie Preißinger
+''')
+
+willkommen()
+
+
+
+
+
+def schereSteinPapierSpiel():
+
+    print ('Schere-Stein-Papier')
 
 gewonnen = 0
 verloren = 0
@@ -65,6 +84,4 @@ while True :
     elif playerMove == '1' and computerMove == '2' :
         print('Sie haben leider verloren')
         verloren = verloren + 1
-
-
 
