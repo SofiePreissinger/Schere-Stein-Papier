@@ -11,3 +11,5 @@ Freundliche Grüße
 
 Sofie Preißinger
 
+-1.1
+  Ein kurzes willkommen und Regeln hinzugefügt.
