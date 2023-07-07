@@ -12,4 +12,6 @@ Freundliche Grüße
 Sofie Preißinger
 
 -1.1
-  Ein kurzes willkommen und Regeln hinzugefügt.
+  Ein kurzes Willkommen und Regeln hinzugefügt.
+-1.2
+  Benutzer kann nun die Anzahl an Runden wählen die gespielt werden sollen.
