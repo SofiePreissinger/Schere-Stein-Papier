@@ -1,6 +1,5 @@
 import random, sys
 
-
 def willkommen():
     print('''
 Willkommen! Viel Spaß mit Schere-Stein-Papier
@@ -13,11 +12,13 @@ Stein schlägt Schere
 
 willkommen()
 
+num_rounds = int(input('Geben Sie die Anzahl der Runden ein die Sie spielen möchten: '))
 
 
 
 
-def schereSteinPapierSpiel():
+
+def schereSteinPapierSpiel(num_rounds):
 
     print ('Schere-Stein-Papier')
 
@@ -25,12 +26,13 @@ gewonnen = 0
 verloren = 0
 unentschieden = 0
 
-while True :
+for _ in range(num_rounds):
     print ('%s gewonnen, %s verloren, %s unentschieden' % (gewonnen, verloren, unentschieden))
 
     while True :
-        print ('Bitte Option wählen: Schere(1) Stein(2) Papier(3) oder (b)beenden')
+        print ('Bitte Option wählen: Schere(1) Stein(2) Papier(3) oder (b)eenden')
         playerMove = input()
+
         if playerMove == 'b':
                 sys.exit()
         if playerMove == '1' or playerMove == '2' or playerMove == '3':
@@ -49,6 +51,7 @@ while True :
 
 
     randomNumber = random.randint(1, 3)
+
     if randomNumber == 1:
         computerMove = '1'
         print ('SCHERE')
@@ -75,13 +78,12 @@ while True :
         print('Sie haben gewonnen!')
         gewonnen = gewonnen + 1
 
-    elif playerMove == '2' and computerMove == '3' :
+    else :
         print ('Sie haben leider verloren')
         verloren = verloren + 1
-    elif playerMove == '3' and computerMove == '1' :
-        print('Sie haben leider verloren')
-        verloren = verloren + 1
-    elif playerMove == '1' and computerMove == '2' :
-        print('Sie haben leider verloren')
-        verloren = verloren + 1
+
+print ('Spiel beendet!')
+print ('%s gewonnene Runden, %s verlorene Runden, %s unentschiedene Runden' % (gewonnen, verloren, unentschieden))
+
+
 
