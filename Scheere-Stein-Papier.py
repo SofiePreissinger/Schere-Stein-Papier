@@ -12,8 +12,13 @@ Stein schlägt Schere
 
 willkommen()
 
-num_rounds = int(input('Geben Sie die Anzahl der Runden ein die Sie spielen möchten: '))
+while True:
 
+    try:
+        num_rounds = int(input('Geben Sie die Anzahl der Runden ein die Sie spielen möchten: '))
+        break
+    except ValueError:
+        print('Ungültige Eingabe. Bitte geben Sie eine Zahl ein.')
 
 
 
@@ -84,6 +89,5 @@ for _ in range(num_rounds):
 
 print ('Spiel beendet!')
 print ('%s gewonnene Runden, %s verlorene Runden, %s unentschiedene Runden' % (gewonnen, verloren, unentschieden))
-
 
 
