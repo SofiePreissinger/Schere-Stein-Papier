@@ -1,5 +1,35 @@
 import random, sys
 
+#ASCII
+
+rock_art = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper_art = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors_art = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+
 def willkommen():
     print('''
 Willkommen! Viel Spaß mit Schere-Stein-Papier
@@ -42,16 +72,16 @@ for _ in range(num_rounds):
                 sys.exit()
         if playerMove == '1' or playerMove == '2' or playerMove == '3':
                 break
-        print ('Bitte 1,2,3 oder b eingeben')
+        print ('Bitte 1 ,2 , 3 oder b eingeben')
 
 
 
     if playerMove == '1':
-        print ('SCHERE gegen ...')
+        print (scissors_art + 'SCHERE gegen ...')
     elif playerMove == '2':
-        print ('STEIN gegen ...')
+        print (rock_art + 'STEIN gegen ...')
     elif playerMove == '3':
-        print ('PAPIER gegen ...')
+        print (paper_art + 'PAPIER gegen ...')
 
 
 
@@ -59,13 +89,13 @@ for _ in range(num_rounds):
 
     if randomNumber == 1:
         computerMove = '1'
-        print ('SCHERE')
+        print (scissors_art + 'SCHERE')
     elif randomNumber == 2:
         computerMove = '2'
-        print ('STEIN')
+        print (rock_art + 'STEIN')
     elif randomNumber == 3:
         computerMove = '3'
-        print ('PAPIER')
+        print (paper_art + 'PAPIER')
 
 
 
